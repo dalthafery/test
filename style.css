@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.vending-machine {
+    width: 300px;
+    height: 450px;
+    border: 3px solid #333;
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.shelves {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.shelf {
+    width: 90%;
+    height: 90px;
+    border-bottom: 2px dashed #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.hidden {
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.window {
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    z-index: 1;
+    bottom: 0%;
+}
+
+.open {
+    transform: translateX(-90%);
+}
+
+.infraredSensor {
+    background: linear-gradient(
+        to top, 
+        transparent 10%, /* First 10% transparent */
+        red 10%,         /* Start red at 10% */
+        red 20%,         /* End red at 20% */
+        transparent 20%  /* Rest is transparent */)
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+.inside {
+  transform: translatey(-120px);
+}
+
+#message {
+  position: absolute;
+  top: 50px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #f00;
+}

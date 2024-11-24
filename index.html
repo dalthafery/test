@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <p id="message">Hello, please open the window.</p> <!-- Feedback message for user -->
+    <div class="vending-machine">
+        <div class="shelves">
+            <div class="shelf" id="level-1">
+                <div class="box" id="box-1" onclick="removeBox(this)">Box 1</div>
+            </div>
+            <div class="shelf" id="level-2">
+                <div class="box" id="box-2" onclick="removeBox(this)">Box 2</div>
+            </div>
+            <div class="shelf" id="level-3">
+                <div class="box" id="box-3" onclick="removeBox(this)">Box 3</div>
+            </div>
+            <div class="shelf infraredSensor" id="level-4">
+                <div class="box" id="box-4" onclick="removeBox(this)">Box 4</div>
+            </div>
+            <div class="window" id="window">Click to Open/Close Window</div>
+        </div>
+    </div>
+    <div class="circle" id="circle" onclick="addCircle()"></div>
+    <script src="script.js"></script>
+</body>
+</html>
