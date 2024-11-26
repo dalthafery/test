@@ -121,7 +121,6 @@ function changeBackgroundIfEmpty() {
 }
 
 function addCircle() {
-    currentStep = 10;
     const body = document.querySelector('body');
     const level4 = document.getElementById("level-4");
     const circle = document.getElementById("circle");
