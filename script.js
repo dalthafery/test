@@ -23,7 +23,7 @@ function closeWindow() {
         checkAndMoveShelves(); 
     }, 3000); // Delay of 3 seconds
 
-    if (currentStep == 2) {
+    if (currentStep == 2 && isFourthLevelEmpty()) {
         currentStep = 0; // Reset the step for the next sequence
         message.textContent = 'Thanks for your order.';
         setTimeout(() => { 
