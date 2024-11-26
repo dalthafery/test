@@ -27,7 +27,7 @@ function closeWindow() {
         currentStep = 0; // Reset the step for the next sequence
         message.textContent = 'Thanks for your order.';
         setTimeout(() => { 
-            message.textContent = 'Hello, please open the window.'; 
+            message.textContent = 'Hello, please open the Window.'; 
         }, 4000);
     }
     
