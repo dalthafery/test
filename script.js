@@ -9,7 +9,7 @@ function openWindow() {
     windowElement.classList.add('open');   
     isWindowOpen = true;
     currentStep++;
-    message.textContent = 'Please take your order.';
+    message.textContent = 'Please take your Order.';
     
 }
 
@@ -27,7 +27,7 @@ function closeWindow() {
         currentStep = 0; // Reset the step for the next sequence
         message.textContent = 'Thanks for your order.';
         setTimeout(() => { 
-            message.textContent = 'Hello, please open the Window.'; 
+            message.textContent = 'Hello, please open the window.'; 
         }, 4000);
     }
     
